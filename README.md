@@ -4,13 +4,13 @@
 docker run --name ssh-bastion -p 22:22 --rm \
     -e "BASTION_PASSWORD=Abcd1234" \
     -e "STUDENT_PASSWORD=Abcd1234" \
-    ssh-bastion:latest
+    ssh-tunneling-bastion:latest
 
 ## Stop Container
-docker container stop ssh-bastion
+docker container stop ssh-tunneling-bastion
 
 ## Build Container
-docker build -t ssh-bastion .
+docker build -t ssh-tunneling-bastion .
 
 
 ## For AWS Cloud9
