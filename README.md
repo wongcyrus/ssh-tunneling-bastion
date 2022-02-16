@@ -1,7 +1,7 @@
 # ssh-tunneling-bastion
 
 ## Start Container
-docker run --name ssh-bastion -p 22:22 --rm \
+docker run --name ssh-tunneling-bastion -p 22:22 --rm \
     -e "BASTION_PASSWORD=Abcd1234" \
     -e "STUDENT_PASSWORD=Abcd1234" \
     ssh-tunneling-bastion:latest
