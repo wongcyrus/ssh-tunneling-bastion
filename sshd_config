@@ -24,7 +24,7 @@
 
 # Logging
 #SyslogFacility AUTH
-#LogLevel INFO
+LogLevel INFO
 
 # Authentication:
 
@@ -84,8 +84,8 @@ PermitEmptyPasswords no
 AllowAgentForwarding yes
 # Feel free to re-enable these if your use case requires them.
 AllowTcpForwarding yes
-GatewayPorts no
-X11Forwarding no
+GatewayPorts yes
+X11Forwarding yes
 #X11DisplayOffset 10
 #X11UseLocalhost yes
 #PermitTTY yes
@@ -99,7 +99,7 @@ X11Forwarding no
 UseDNS no
 #PidFile /run/sshd.pid
 #MaxStartups 10:30:100
-#PermitTunnel no
+PermitTunnel yes
 #ChrootDirectory none
 #VersionAddendum none
 
@@ -115,5 +115,3 @@ Subsystem       sftp    /usr/lib/ssh/sftp-server
 #       AllowTcpForwarding no
 #       PermitTTY no
 #       ForceCommand cvs server
-
-PermitTunnel=yes

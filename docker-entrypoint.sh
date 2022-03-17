@@ -15,4 +15,6 @@ echo "student:${STUDENT_PASSWORD}" | chpasswd
 [ -n "${SSH_HOME_DIR}" ] && \
     usermod -d $SSH_HOME_DIR bastion
 
+ssh-keygen -A
+
 exec "$@"

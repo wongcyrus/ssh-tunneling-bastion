@@ -3,8 +3,6 @@ LABEL maintainer="Cyrus Wong <cywong@vtc.edu.hk>"
 RUN apk add --update --no-cache openssh bash wget curl vim shadow 
 
 ADD sshd_config /etc/ssh/sshd_config    
-RUN ssh-keygen -A
-
 
 # Add a "bastion" user with a default password of "bastion"
 RUN adduser -s /bin/bash -S bastion && \
