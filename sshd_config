@@ -94,7 +94,7 @@ X11Forwarding yes
 #TCPKeepAlive yes
 #PermitUserEnvironment no
 #Compression delayed
-ClientAliveInterval 1
+ClientAliveInterval 15
 ClientAliveCountMax 3
 UseDNS no
 #PidFile /run/sshd.pid
